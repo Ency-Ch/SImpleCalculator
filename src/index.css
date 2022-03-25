@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-color: #d81e5b;
+  --secondary-color: #8c38ff;
+  --dark: #131a26;
+  --light: #eee;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fira sans", sans-serif;
 }
+body {
+  background-color: var(--light);
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: var(--dark);
+}
+.numbers button {
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  background-color: var(--dark);
+  cursor: pointer;
+}
+.operators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  border-radius: 20px;
+  background-color: var(--dark);
+}
+.operators button {
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  background-color: var(--dark);
+  cursor: pointer;
+}
+
+.equals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  border-radius: 20px;
+  background-color: var(--dark);
+}
+.calculator {
+  margin-top: 100px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: var(--dark);
+  border-radius: 20px;
+}
+.results-calculation-space {
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+.equals button {
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  background-color: var(--dark);
+  cursor: pointer;
+}
+
+/* @media only screen and (max-width: 550px) {
+  .numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .operators {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .equals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+} */
